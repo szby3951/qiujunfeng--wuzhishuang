@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one is for my Varchhu</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<!-- <div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*THE CODE OF LOVE</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Hey Girl !<br />
+			Do you remember the day we first met?<br />
+			<span class="comments">// The ET-LAB Friday. </span><br />
+			Since that day a spark begun;<br />
+			<span class="comments">// Your face Your Voice Your Words.</span><br />
+			Your everything got imprinted in my heart;<br />
+			As the time went on;<br />
+			The Bond grew stronger and stronger;<br />
+			Journey from Infatuation to Love;<br />
+			We have traveled a long way together;<br />
+			There have been fights ;<br />
+			<span class="comments">// And I'm sure there will be more.</span><br />
+			But our Bond will always grow back Stronger;<br />
+			<br>
+			<br>
+			All I want to say is:<br />
+			Baby, I will love you forever;<br />
+			<br>
+			<br>
+			Now If you want to hug me you can touch the heart below<br />
+			<br>
+			<span id="heartspan">
+			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					वर्षा ऋतु FOREVER
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">- RITVIK</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">* 2026年1月4日</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			哇靠，翠货，<br />
+			你还记得我们怎么认识的吗？<br />
+			<br />
+			给你讲实话吧，其实就是因为象棋。<br />
+			当时觉得你下棋厉害，<br />
+			我想着我有个当兵的朋友也喜欢下象棋，<br />
+			<span class="comments">// 所以我把你推给他了。</span><br />
+			现在想想我真是蠢透了。<br />
+			<br />
+			你那个朋友圈我夸你帅，<br />
+			当时真没别的意思呀，<br />
+			<span class="comments">// 真的只是随口一夸。</span><br />
+			可谁知道你那么翠，<br />
+			直接给我私聊，<br />
+			我当时真把你当普通路人的。<br />
+			<br />
+			谁知道越聊越上头，<br />
+			我感觉你想泡我，<br />
+			一直给我开玩笑，<br />
+			其实我也有点心动吧，<br />
+			只是我担心你想玩弄我的感情，<br />
+			所以我就不是很敢表达喜欢。<br />
+			<br />
+			我想着循序渐进，<br />
+			看看咱俩能聊到啥程度，<br />
+			谁知道你喝两晚酒，<br />
+			<span class="comments">// 直接把一个月的进度打通了。</span><br />
+			<br />
+			讲真的我高兴坏了，<br />
+			感情方面你比我有勇气呀。<br />
+			我也相信勇敢的人先享受幸福，<br />
+			我肯定好好对你的<br />
+			我给你保证！<br />
+		
+			<br />
+			很期待见面那天啊，<br />
+			我已经想好要怎么来让感情迅速升温了，<br />
+			我肯定不会让你失望呀 ❤<br />
+			<br />
+			<span class="comments">// 真挚的话送给翠翠的你</span><br />
+			如果你想看我的过去，<br />
+			可以点一下下面的爱心。<br />
+			<br />
+			<span id="heartspan">
+				<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					2026年1月4日 18:31:00至今已有--
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					希望我们明天越来越好<br/>
+					<div class="signature">- 邱</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2025, 12, 17);
+together.setHours(18);
+together.setMinutes(31);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
